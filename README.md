@@ -23,7 +23,9 @@
 ├─ apis                 # 请求接口
 ├─ common               # 公共文件
 ├─ components           # 全局组件
+├─ configs           	# 项目配置
 ├─ hooks                # 组合式函数
+├─ locale               # 多语言配置
 ├─ pages                # 主包页面
 ├─ static               # 静态资源
 ├─ stores               # Pinia 全局状态

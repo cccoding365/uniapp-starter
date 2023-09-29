@@ -4,13 +4,13 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "首页"
+				"navigationBarTitleText": "%tabBar.home%"
 			}
 		},
 		{
 			"path": "pages/profile/profile",
 			"style": {
-				"navigationBarTitleText": "我的",
+				"navigationBarTitleText": "%tabBar.mine%",
 				"enablePullDownRefresh": false
 			}
 		}
@@ -25,13 +25,13 @@
 				"pagePath": "pages/index/index",
 				"iconPath": "static/icons/home.png",
 				"selectedIconPath": "static/icons/home-fill.png",
-				"text": "首页"
+				"text": ""
 			},
 			{
 				"pagePath": "pages/profile/profile",
 				"iconPath": "static/icons/customer-bussinessman.png",
 				"selectedIconPath": "static/icons/customer-businessman-fill.png",
-				"text": "我的"
+				"text": ""
 			}
 		]
 	},
