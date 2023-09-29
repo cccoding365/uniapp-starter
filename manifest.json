@@ -1,5 +1,5 @@
 {
-	"name": "src",
+	"name": "uni-app starter",
 	"appid": "__UNI__672C05E",
 	"description": "这是一个uni-app项目基础模板。",
 	"versionName": "1.0.0",
@@ -50,7 +50,7 @@
 	"quickapp": {},
 	/* 小程序特有相关 */
 	"mp-weixin": {
-		"appid": "",
+		"appid": "wxb908821cb7e9acb2",
 		"setting": {
 			"urlCheck": false,
 			"minified": true,
