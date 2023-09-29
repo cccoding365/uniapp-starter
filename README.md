@@ -20,24 +20,25 @@
 ## 工程结构
 
 ```
-├─ src
-|   ├─ apis          # 请求接口
-|   ├─ common        # 公共文件
-|   ├─ components    # 全局组件
-|   ├─ hooks         # 组合式函数
-|   ├─ pages         # 主包页面
-|   ├─ static        # 静态资源
-|   ├─ stores        # Pinia 全局状态
-|   ├─ styles        # 全局样式
-|   ├─ subPackages   # 分包目录
-|   ├─ types         # 类型声明文件
-|   ├─ uni_modules   # uni-ui 组件库
-|   ├─ utils         # 全局工具方法
-|   ├─ App.vue       # 应用配置，用来配置 App 全局样式以及监听应用生命周期
-|   ├─ index.html    # H5 端首页
-|   ├─ main.ts       # Vue 初始化入口文件
-|   ├─ manifest.json # 配置应用名称、appid、logo、版本等打包信息
-|   ├─ pages.json    # 配置页面路由、导航条、选项卡等页面类信息
-|   ├─ tsconfig.json # TypeScript 配置
-|   └─ uni.scss      # uni-app 内置样式变量
+├─ apis                 # 请求接口
+├─ common               # 公共文件
+├─ components           # 全局组件
+├─ hooks                # 组合式函数
+├─ pages                # 主包页面
+├─ static               # 静态资源
+├─ stores               # Pinia 全局状态
+├─ styles               # 全局样式
+├─ types                # 类型声明文件
+├─ uni_modules          # uni-ui 组件库
+├─ utils                # 全局工具方法
+├─ views                # 分包目录
+├─ .gitignore           # Git 忽略文件
+├─ App.vue              # 应用配置，用来配置 App 全局样式以及监听应用生命周期
+├─ index.html           # H5 端首页
+├─ main.ts              # Vue 初始化入口文件
+├─ manifest.json        # 配置应用名称、appid、logo、版本等打包信息
+├─ pages.json           # 配置页面路由、导航条、选项卡等页面类信息
+├─ README.md            # 项目说明文件
+├─ tsconfig.json        # TypeScript 配置
+└─ uni.scss             # uni-app 内置样式变量
 ```
