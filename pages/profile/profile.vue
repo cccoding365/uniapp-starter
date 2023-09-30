@@ -1,16 +1,19 @@
 <template>
 	<view>
-		<button type="primary" @click="switchLanguageHandle">切换语言</button>
+		<button type="primary" @click="switchLanguageHandle">{{$t('tabBar.mine')}}</button>
 	</view>
 </template>
 
 <script lang="ts" setup>
+	import { useI18n } from 'vue-i18n';
+	let { locale } = useI18n();
+
 	const switchLanguageHandle = () => {
-		console.log(uni.getLocale());
-		const lang = uni.getLocale();
-		if (lang === 'en') {
-			uni.setLocale('zh-Hans');
+		if (uni.getLocale() === 'en') {
+			locale.value = 'cn';
+			uni.setLocale('cn');
 		} else {
+			locale.value = 'en';
 			uni.setLocale('en');
 		}
 	};

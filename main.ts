@@ -1,15 +1,16 @@
 import { createSSRApp } from 'vue';
 import { createI18n } from 'vue-i18n';
-import App from '@/App';
-import lang from '@/locale';
 
+import App from '@/App';
+import messages from '@/locale';
+
+const app = createSSRApp(App);
 const i18n = createI18n({
-	locale: uni.getLocale(),
-	lang
+	locale: 'cn',
+	messages
 });
 
 export function createApp() {
-	const app = createSSRApp(App);
 	app.use(i18n);
 	return {
 		app

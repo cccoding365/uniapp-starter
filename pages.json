@@ -25,13 +25,13 @@
 				"pagePath": "pages/index/index",
 				"iconPath": "static/icons/home.png",
 				"selectedIconPath": "static/icons/home-fill.png",
-				"text": ""
+				"text": "%tabBar.home%"
 			},
 			{
 				"pagePath": "pages/profile/profile",
 				"iconPath": "static/icons/customer-bussinessman.png",
 				"selectedIconPath": "static/icons/customer-businessman-fill.png",
-				"text": ""
+				"text": "%tabBar.mine%"
 			}
 		]
 	},

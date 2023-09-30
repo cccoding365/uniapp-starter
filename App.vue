@@ -4,9 +4,11 @@
 		onLaunch: function () {
 			console.log('App Launch');
 			switchLanguage();
+			// #ifdef MP-WEIXIN
 			uni.onLocaleChange(() => {
 				switchLanguage();
 			});
+			// #endif
 		},
 		onShow: function () {
 			console.log('App Show');

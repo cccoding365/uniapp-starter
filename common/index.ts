@@ -1,6 +1,6 @@
 export const switchLanguage = () => {
 	const lang = uni.getLocale();
-	if (lang === 'zh-Hans') {
+	if (lang === 'cn') {
 		uni.setTabBarItem({
 			index: 0,
 			text: '首页'
@@ -19,4 +19,4 @@ export const switchLanguage = () => {
 			text: 'Mine'
 		});
 	}
-}
+};

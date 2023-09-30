@@ -9,7 +9,13 @@
 
 <script lang="ts" setup>
 	import { ref } from "vue";
+	import { useI18n } from 'vue-i18n';
 	const title = ref('uni-app starter');
+	const { locale, t } = useI18n();
+	console.log(locale.value);
+	uni.setNavigationBarTitle({
+		title: t('tabBar.home')
+	});
 </script>
 
 <style lang="scss" scoped>
