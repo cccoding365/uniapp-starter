@@ -6,7 +6,7 @@ import messages from '@/locale';
 
 const app = createSSRApp(App);
 const i18n = createI18n({
-	locale: 'cn',
+	locale: uni.getLocale(),
 	messages
 });
 

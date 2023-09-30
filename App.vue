@@ -3,12 +3,11 @@
 	export default {
 		onLaunch: function () {
 			console.log('App Launch');
+			console.log(uni.getLocale());
 			switchLanguage();
-			// #ifdef MP-WEIXIN
 			uni.onLocaleChange(() => {
 				switchLanguage();
 			});
-			// #endif
 		},
 		onShow: function () {
 			console.log('App Show');
