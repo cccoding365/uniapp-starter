@@ -14,7 +14,12 @@
 			}
 		}
 	],
-	"subPackages": [],
+	"subPackages": [{
+		"root": "views",
+		"pages": [{
+			"path": "landscape/landscape"
+		}]
+	}],
 	"tabBar": {
 		"borderStyle": "white", // 微信小程序端仅支持 black/white
 		"color": "#333",
