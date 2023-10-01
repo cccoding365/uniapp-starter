@@ -1,4 +1,6 @@
 {
 	"tabBar.home": "首页",
-	"tabBar.mine": "我的"
+	"tabBar.mine": "我的",
+	"navBar.home": "首页",
+	"navBar.mine": "我的"
 }

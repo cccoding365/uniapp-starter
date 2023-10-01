@@ -5,8 +5,10 @@ import App from '@/App';
 import messages from '@/locale';
 
 const app = createSSRApp(App);
+
+const locale = uni.getLocale() === 'en' ? 'en' : 'cn';
 const i18n = createI18n({
-	locale: uni.getLocale(),
+	locale,
 	messages
 });
 

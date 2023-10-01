@@ -1,13 +1,14 @@
 <script lang="ts">
-	import { switchLanguage } from '@/common';
+	import { tabBarLocaleHandle } from '@/common';
 	export default {
 		onLaunch: function () {
 			console.log('App Launch');
-			console.log(uni.getLocale());
-			switchLanguage();
+			// #ifdef MP-WEIXIN
+			tabBarLocaleHandle();
 			uni.onLocaleChange(() => {
-				switchLanguage();
+				tabBarLocaleHandle();
 			});
+			// #endif
 		},
 		onShow: function () {
 			console.log('App Show');
@@ -20,4 +21,9 @@
 
 <style>
 	/*每个页面公共css */
+	page {
+		margin: 0;
+		box-sizing: border-box;
+		padding: 8rpx;
+	}
 </style>

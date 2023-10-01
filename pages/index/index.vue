@@ -1,3 +1,20 @@
+<script lang="ts" setup>
+	import { ref } from "vue";
+	import { useI18n } from 'vue-i18n';
+	import { onShow } from '@dcloudio/uni-app';
+	const { t } = useI18n();
+
+	onShow(() => {
+		// #ifdef MP-WEIXIN
+		uni.setNavigationBarTitle({
+			title: t('tabBar.home')
+		});
+		// #endif
+	});
+
+	const title = ref('uni-app starter');
+</script>
+
 <template>
 	<view class="content">
 		<image class="logo" src="/static/logo.png"></image>
@@ -6,16 +23,6 @@
 		</view>
 	</view>
 </template>
-
-<script lang="ts" setup>
-	import { ref } from "vue";
-	import { useI18n } from 'vue-i18n';
-	const title = ref('uni-app starter');
-	const { t } = useI18n();
-	uni.setNavigationBarTitle({
-		title: t('tabBar.home')
-	});
-</script>
 
 <style lang="scss" scoped>
 	.content {

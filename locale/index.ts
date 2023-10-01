@@ -3,5 +3,5 @@ import cn from './cn.json';
 
 export default {
 	en,
-	'zh-Hans': cn
+	cn
 };

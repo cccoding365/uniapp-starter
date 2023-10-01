@@ -1,23 +1,26 @@
-export const switchLanguage = () => {
-	const lang = uni.getLocale();
-	if (lang === 'zh-Hans') {
+export const tabBarLocaleHandle = () => {
+	const lang = uni.getLocale() === 'en' ? 'en' : 'cn';
+	const tabBars = [
+		{ en: 'Home', cn: '首页' },
+		{ en: 'Mine', cn: '我的' }
+	];
+	tabBars.forEach((item, index) => {
 		uni.setTabBarItem({
-			index: 0,
-			text: '首页'
+			index,
+			text: item[lang]
 		});
-		uni.setTabBarItem({
-			index: 1,
-			text: '我的'
-		});
-	}
-	if (lang === 'en') {
-		uni.setTabBarItem({
-			index: 0,
-			text: 'Home'
-		});
-		uni.setTabBarItem({
-			index: 1,
-			text: 'Mine'
+	});
+	const pages = getCurrentPages();
+	const navBars = {
+		'pages/mine/mine': {
+			en: 'Mine',
+			cn: '我的'
+		}
+	};
+	if (pages.length !== 0) {
+		const page = pages[pages.length - 1] || {};
+		uni.setNavigationBarTitle({
+			title: navBars[page.route][lang]
 		});
 	}
 };

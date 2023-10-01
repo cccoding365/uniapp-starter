@@ -1,4 +1,6 @@
 {
 	"tabBar.home": "Home",
-	"tabBar.mine": "Mine"
+	"tabBar.mine": "Mine",
+	"navBar.home": "Home",
+	"navBar.mine": "Mine"
 }

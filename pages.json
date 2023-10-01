@@ -8,27 +8,27 @@
 			}
 		},
 		{
-			"path": "pages/profile/profile",
+			"path": "pages/mine/mine",
 			"style": {
-				"navigationBarTitleText": "%tabBar.mine%",
-				"enablePullDownRefresh": false
+				"navigationBarTitleText": "%tabBar.mine%"
 			}
 		}
 	],
 	"subPackages": [],
 	"tabBar": {
-		"borderStyle": "black", // 微信小程序端仅支持 black/white
+		"borderStyle": "white", // 微信小程序端仅支持 black/white
 		"color": "#333",
 		"selectedColor": "#333",
-		"backgroundColor": "white",
-		"list": [{
+		"backgroundColor": "#F8F8F8",
+		"list": [ // list 数组对应底部导航栏的顺序
+			{
 				"pagePath": "pages/index/index",
 				"iconPath": "static/icons/home.png",
 				"selectedIconPath": "static/icons/home-fill.png",
 				"text": "%tabBar.home%"
 			},
 			{
-				"pagePath": "pages/profile/profile",
+				"pagePath": "pages/mine/mine",
 				"iconPath": "static/icons/customer-bussinessman.png",
 				"selectedIconPath": "static/icons/customer-businessman-fill.png",
 				"text": "%tabBar.mine%"
@@ -38,8 +38,7 @@
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarBackgroundColor": "#F8F8F8"
 	},
 	"uniIdRouter": {}
 }
