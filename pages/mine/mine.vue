@@ -24,9 +24,12 @@
 
 	const switchOrientationHandle = () => {
 		// #ifdef APP-PLUS
-		uni.navigateTo({
-			url: '/views/landscape/landscape'
-		});
+		plus.screen.lockOrientation('landscape');
+		setTimeout(() => {
+			uni.navigateTo({
+				url: '/views/landscape/landscape'
+			});
+		}, 300);
 		// #endif
 	};
 
