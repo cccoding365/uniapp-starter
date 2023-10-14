@@ -24,6 +24,7 @@
 ├─ common               # 公共文件
 ├─ components           # 全局组件
 ├─ configs           	# 项目配置
+├─ constants           	# 常量定义
 ├─ hooks                # 组合式函数
 ├─ locale               # 多语言配置
 ├─ pages                # 主包页面
